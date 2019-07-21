@@ -1,6 +1,6 @@
 This is a small `R` script to convert the `Rdata` file created by the automated algorithm configuration tool [irace](http://iridia.ulb.ac.be/irace/) to input format supported by the algorithm parameter analysis tool [PyImp](https://github.com/automl/ParameterImportance).
 
-####Requirements
+#### Requirements
 - [irace](http://iridia.ulb.ac.be/irace/) (>=3.0)
 - [PyImp](https://github.com/automl/ParameterImportance) 
 - [argparser](https://cran.r-project.org/web/packages/argparser/index.html) (>=0.4)
@@ -9,7 +9,7 @@ This is a small `R` script to convert the `Rdata` file created by the automated 
 
 There are two examples in `examples` folder. To run each example, simply execute the script `run.sh` in that folder
 
-####Usage
+#### Usage
 
 ```
 ./irace-to-pimp.R [--help] [--normalise] [--normalise-scope NORMALISE-SCOPE] [--out-dir OUT-DIR] [--instance-feature-file INSTANCE-FEATURE-FILE] [--filter-conditions FILTER-CONDITIONS] [--default-configuration-index DEFAULT-CONFIGURATION-INDEX] irace-rdata-file
