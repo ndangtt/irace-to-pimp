@@ -12,9 +12,10 @@ There are two examples in `examples` folder. To run each example, simply execute
 #### Usage
 
 ```
-./irace-to-pimp.R [--help] [--normalise] [--normalise-scope NORMALISE-SCOPE] [--out-dir OUT-DIR] [--instance-feature-file INSTANCE-FEATURE-FILE] [--filter-conditions FILTER-CONDITIONS] [--default-configuration-index DEFAULT-CONFIGURATION-INDEX] irace-rdata-file
-
-irace-to-pimp command line arguments
+./irace-to-pimp.R [--help] [--normalise] [--normalise-scope NORMALISE-SCOPE] [--out-dir OUT-DIR] 
+		  [--instance-feature-file INSTANCE-FEATURE-FILE] 
+		  [--filter-conditions FILTER-CONDITIONS] 
+		  [--default-configuration-index DEFAULT-CONFIGURATION-INDEX] irace-rdata-file
 
 positional arguments:
   irace-rdata-file			  irace Rdata file
