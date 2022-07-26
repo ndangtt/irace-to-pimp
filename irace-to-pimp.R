@@ -284,6 +284,7 @@ generate_runhistory_trajectory <- function(rdata, args, tFeatures){
   # melt experiments
   experiments <- cbind(instance_seed_id=c(1:nrow(experiments)), experiments)
   experiments <- melt.data.table(experiments, id.vars = 'instance_seed_id', variable.name = 'candidate_id', value.name='cost', na.rm = TRUE)
+  experiments$candidate_id <- as.integer(experiments$candidate_id)
   
   # add instance names and instance_seed_id into experiments
   experiments <- merge(experiments, tInstanceSeeds, by='instance_seed_id')
