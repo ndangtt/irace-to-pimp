@@ -380,7 +380,12 @@ generate_runhistory_trajectory <- function(rdata, args, tFeatures){
     
     #rs = [[conf_id, inst, seed], [cost, time, status, {}]]
     s1 <- paste(row$candidate_id, double_quote(row$instance), row$seed, sep = ', ')
-    s2 <- paste(as.character(cost), as.character(time), paste('{',double_quote('__enum__'),': ',double_quote(status),'}',sep=''), '{}', sep=', ')
+    s2 <- paste(as.character(cost), 
+                as.character(time), 
+                paste('{',double_quote('__enum__'),': ',double_quote(status),'}',sep=''), 
+                '0','0', # starttime and endtime, required by smac (new versions)
+                '{}', 
+                sep=', ')
     s <- paste('[[',s1,'], [',s2,']]',sep='')
     if (row_id > 1)
       cat(', ',file=f)
